@@ -1,0 +1,49 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #323441;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea arriba si el contenido es corto */
+    min-height: 100vh; /* Asegura que ocupe al menos la altura de la vista */    
+}
+.principal {
+    background-color: #151922;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px #0d0907;
+    padding: 30px;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+}
+h1{
+    background: linear-gradient(to bottom, #b435c8, #9932a9); 
+    margin-bottom: 25px;
+    font-size: 2.7em;   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.artistas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las columnas se apilen en pantallas pequeñas */
+    gap: 30px; /* Espacio entre las secciones */
+    margin-bottom: 30px;
+    justify-content: center; /* Centra las columnas si no hay espacio completo */
+}
+h2 {
+    color: #b435c8;
+    font-size: 1.6em;
+    border-bottom: 2px solid #9932a9;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.listaDeArtistas{
+    flex: 1; /* Permite que ambas secciones crezcan y ocupen el espacio */
+    min-width: 280px; /* Ancho mínimo para cada columna */
+    background-color: #cccccf;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: inset 0 1px 5px black;
+}
