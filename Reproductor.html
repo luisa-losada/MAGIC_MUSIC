@@ -11,19 +11,30 @@
     <div class="principal">
         <h1> MAGIC MUSIC</h1>
         <div class="artistas">
-            <h2> Artistas</h2>
             <div class="ListaDeArtistas">
+                <h2> Artistas</h2>
                 <ul>
-                    <li ng-repeats="artista in artistas"></li>
-                    {{ artista.Nombre }}
+                    <li ng-repeat="artista in artistas" ng-click="SeleccionarArtista(artista)">
+                        {{ artista.Nombre }}
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="Canciones">
-          
-                
+        <div class="canciones">
+            <div class="ListaDeCanciones">
+                <h3> Canciones De</h3>
+                <ul>
+                    <li ng-repeat="cancion in canciones" ng-click="SelecionarCancion(cancion)">
+                        {{cancion.Titulo}}
+
+                    </li>
+                </ul>
+
             </div>
+
+
         </div>
+    </div>
     </div>
 
 </body>
