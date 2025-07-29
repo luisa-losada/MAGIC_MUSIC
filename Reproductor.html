@@ -20,21 +20,30 @@
                 </ul>
             </div>
         </div>
-        <div class="canciones">
-            <div class="ListaDeCanciones">
-                <h3> Canciones De</h3>
-                <ul>
-                    <li ng-repeat="cancion in canciones" ng-click="SelecionarCancion(cancion)">
-                        {{cancion.Titulo}}
-
-                    </li>
-                </ul>
-
-            </div>
-
+        <div class="ListaDeCanciones">
+            <h2 ng-if="artistasSeleccionado!=''"> Canciones De {{artistasSeleccionado}}</h2>
+            <ul>
+                <li ng-repeat="cancion in canciones" ng-click="SeleccionarCancion(cancion)">
+                    {{cancion.Titulo}}
+                </li>
+            </ul>
 
         </div>
     </div>
+    <div class="Plays">
+        <h3>Reproduciendo Ahora</h3>
+       {{cancionSeleccionada}}
+       <div>
+        <button ng-click="reproducir()">
+            <img src="iconos/3671827_outline_pause_icon.png">
+        </button>
+        <button>
+            <img src="iconos/6127266_multimedia_music_play_player_song_icon.png">
+        </button>
+        <button>
+            <img src="iconos/9057067_play_stop_o_icon.png">
+        </button>
+       </div>
     </div>
 
 </body>
